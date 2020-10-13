@@ -32,3 +32,4 @@ main = launchAff_ $ runSpec [consoleReporter] do
     it "Thai ๐๑๒๓๔๕๖๗๘๙" (westernizeNumerals "๐๑๒๓๔๕๖๗๘๙" `shouldEqual` "0123456789")
     it "Lao ໐໑໒໓໔໕໖໗໘໙" (westernizeNumerals "໐໑໒໓໔໕໖໗໘໙" `shouldEqual` "0123456789")
     it "Myanmar ႐႑႒႓႔႕႖႗႘႙ " (westernizeNumerals "႐႑႒႓႔႕႖႗႘႙" `shouldEqual` "0123456789")
+    it "Ethiopic numerals should not be supported ፩፪፫፬፭፮፯፰፱" (westernizeNumerals "፩፪፫፬፭፮፯፰፱" `shouldEqual` "፩፪፫፬፭፮፯፰፱")
