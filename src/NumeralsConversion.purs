@@ -5,8 +5,6 @@ import Prelude
 import Data.Maybe (Maybe(Just, Nothing))
 import Data.String.CodeUnits (indexOf, singleton, toCharArray, fromCharArray)
 import Data.String.Pattern (Pattern(Pattern))
-import Effect (Effect)
-import Effect.Console (log)
 
 isIn :: Char -> String -> Boolean
 isIn needle haystack = 
